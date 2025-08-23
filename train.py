@@ -59,6 +59,7 @@ test_roc = float(roc_auc_score(y_test, y_proba)) if y_proba is not None else Non
 os.makedirs("models", exist_ok=True)
 joblib.dump(best_pipe, "models/heart_model.pkl")
 
+
 with open("evaluation.txt", "w") as f:
     f.write(f"Best model: {best_name}\n")
     f.write(f"CV ROC-AUC (mean): {scores[best_name][0]:.3f}\n")
@@ -67,3 +68,5 @@ with open("evaluation.txt", "w") as f:
     f.write("\nClassification report (test):\n")
     f.write(classification_report(y_test, y_pred))
 print("Saved model to models/heart_model.pkl")
+
+
