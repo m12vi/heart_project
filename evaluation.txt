@@ -1,0 +1,13 @@
+Best model: log_reg
+CV ROC-AUC (mean): 0.890
+Test ROC-AUC: 0.910
+
+Classification report (test):
+              precision    recall  f1-score   support
+
+           0       0.88      0.82      0.85        28
+           1       0.86      0.91      0.88        33
+
+    accuracy                           0.87        61
+   macro avg       0.87      0.87      0.87        61
+weighted avg       0.87      0.87      0.87        61
